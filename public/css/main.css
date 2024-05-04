@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("/fonts/Vazir.ttf") format("ttf");
+  src: url("/fonts/Vazir.eot") format("eot");
+  src: url("/fonts/Vazir.woff") format("woff");
+  src: url("/fonts/Vazir.woff2") format("woff2");
+}
+body {
+  background-color: #1d1f21;
+  font-family: "Vazir", sans-serif;
+  direction: rtl;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(219, 219, 219);
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Main */
+
+main {
+  width: 80%;
+  padding: 10px;
+  background-color: #37383b;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+p {
+  color: rgb(219, 219, 219);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+form input {
+  border-radius: 5px;
+  padding: 7px;
+  outline: none;
+  font-size: 17px;
+}
+
+#add-product {
+  margin-top: 10px;
+  font-family: "Vazir", sans-serif;
+  background-color: transparent;
+  outline: none;
+  color: rgb(219, 219, 219);
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#product-item {
+  display: flex;
+  width: 200px;
+  align-items: center;
+}
+
+#delete-product {
+  font-family: "Vazir", sans-serif;
+  background-color: rgb(255, 30, 75);
+  outline: none;
+  color: rgb(241, 241, 241);
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}

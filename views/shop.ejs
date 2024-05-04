@@ -1,0 +1,17 @@
+<%- include("includes/header.ejs") %>
+    <main>
+      <p>لیست محصولات</p>
+      <% if(products.length > 0) { %> <% for(let item of products) { %>
+        <div id="product-item">
+          <p><%= item.title %></p>
+          <form action="/" method="POST">
+            <input type="hidden" value="<%= item._id %>" name="productId">
+            <button id="delete-product" type="submit">حذف</button>
+          </form>
+        </div>
+      <% } %> <% } else { %>
+      <p>محصولی یافت نشد.</p>
+      <% } %>
+    </main>
+  </body>
+</html>
